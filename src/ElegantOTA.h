@@ -24,7 +24,7 @@ _____ _                        _    ___ _____  _
 #include "elop.h"
 
 #ifndef ELEGANTOTA_USE_ASYNC_WEBSERVER
-  #define ELEGANTOTA_USE_ASYNC_WEBSERVER 0
+  #define ELEGANTOTA_USE_ASYNC_WEBSERVER 1
 #endif
 
 #ifndef ELEGANTOTA_DEBUG
@@ -45,7 +45,7 @@ _____ _                        _    ___ _____  _
   #include <functional>
   #include "FS.h"
   #include "LittleFS.h"
-  #include "Updater.h"
+  #include <Updater.h>
   #include "StreamString.h"
   #if ELEGANTOTA_USE_ASYNC_WEBSERVER == 1
     #include "ESPAsyncTCP.h"
